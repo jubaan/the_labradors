@@ -4,12 +4,12 @@ This repo is to keep track of the weekly challenges solved by _*The Labradors Te
 
 The objective, besides solviving the challenge or generating working code, is to
 understand what and how the code works so we can improve our logic and coding
-skills with ruby and overall programming.
+skills with ruby and programming overall.
 
 Every time a challenge is solved and presented, we benchmark and profile the
 code to have a better understanding of what the code does and how it solves the
 problem; giving us an overview of the bottlenecks, the time consuming methods
-and know more approaches for solving the same issue.
+and letting us know, other points of view and  more approaches for solving the same issue.
 
 ## How we do it
 
