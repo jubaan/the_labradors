@@ -1,0 +1,64 @@
+Measure Mode: wall_time
+Thread ID: 80
+Fiber ID: 60
+Total: 0.000301
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 30.58      0.000     0.000     0.000     0.000        1   [global]#                      vestigium_maria.rb:21
+ 28.23      0.000     0.000     0.000     0.000        5  *Integer#times                  
+ 13.95      0.000     0.000     0.000     0.000        8   Array#uniq                     
+ 12.52      0.000     0.000     0.000     0.000       16   Array#hash                     
+  8.73      0.000     0.000     0.000     0.000        1   Object#vestigium_maria         vestigium_maria.rb:3
+  3.38      0.000     0.000     0.000     0.000        4   Integer#to_s                   
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
+0      0.000              1/5     Object#vestigium_maria
+  57.31%  28.23%      0.000      0.000      0.000      0.000                5    *Integer#times                  
+                      0.000      0.000      0.000      0.000              8/8     Array#uniq
+                      0.000      0.000      0.000      0.000              4/5     Integer#times
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000              8/8     Integer#times
+  29.08%  13.95%      0.000      0.000      0.000      0.000                8     Array#uniq                     
+                      0.000      0.000      0.000      0.000            16/16     Array#hash
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000            16/16     Array#uniq
+  15.14%  12.52%      0.000      0.000      0.000      0.000               16     Array#hash                     
+                      0.000      0.000      0.000      0.000            16/16     Kernel#hash
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000              4/4     Object#vestigium_maria
+   3.38%   3.38%      0.000      0.000      0.000      0.000                4     Integer#to_s                   
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.

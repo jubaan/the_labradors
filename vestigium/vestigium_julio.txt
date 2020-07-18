@@ -1,0 +1,73 @@
+Measure Mode: wall_time
+Thread ID: 80
+Fiber ID: 60
+Total: 0.000090
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 30.61      0.000     0.000     0.000     0.000        8   Array#==
+ 25.27      0.000     0.000     0.000     0.000        1   [global]#                      vestigium_julio.rb:32
+ 11.99      0.000     0.000     0.000     0.000        1   Object#vestigium               vestigium_julio.rb:3
+ 11.55      0.000     0.000     0.000     0.000        2   Object#count                   vestigium_julio.rb:18
+  5.14      0.000     0.000     0.000     0.000        1   Array#transpose
+  4.78      0.000     0.000     0.000     0.000        8   BasicObject#!=
+  4.12      0.000     0.000     0.000     0.000        8   Array#uniq
+  3.38      0.000     0.000     0.000     0.000        1   Object#trace                   vestigium_julio.rb:8
+  3.16      0.000     0.000     0.000     0.000        4   Integer#to_s
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
+     0.000      0.000              8/8     BasicObject#!=
+                      0.000      0.000      0.000      0.000              8/8     Array#uniq
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000              8/8     Object#count
+  35.39%   4.78%      0.000      0.000      0.000      0.000                8     BasicObject#!=
+                      0.000      0.000      0.000      0.000              8/8     Array#==
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000              8/8     BasicObject#!=
+  30.61%  30.61%      0.000      0.000      0.000      0.000                8     Array#==
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000              1/1     Object#vestigium
+   5.14%   5.14%      0.000      0.000      0.000      0.000                1     Array#transpose
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000              8/8     Object#count
+   4.12%   4.12%      0.000      0.000      0.000      0.000                8     Array#uniq
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000              1/1     Object#vestigium
+   3.38%   3.38%      0.000      0.000      0.000      0.000                1     Object#trace                   vestigium_julio.rb:8
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                      0.000      0.000      0.000      0.000              4/4     Object#vestigium
+   3.16%   3.16%      0.000      0.000      0.000      0.000                4     Integer#to_s
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
